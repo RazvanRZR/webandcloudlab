@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dinamo București's 2026/27 season: results, fixtures, league standings and the players behind the red and white.">
+  <meta name="theme-color" content="#e51e36">
+  <title>Dinamo București — One Club. One Heart.</title>
+  <link rel="icon" href="assets/crest.webp">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a href="#" class="brand" aria-label="Dinamo season home"><img src="assets/crest.webp" alt="Dinamo crest" width="42" height="49"><span>DINAMO <small>BUCUREȘTI · EST. 1948</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Toggle navigation">☰</button>
+    <nav id="navigation" aria-label="Main navigation"><a class="active" href="#main">Overview</a><a href="#matches">Matches</a><a href="#standings">Standings</a><a href="#squad">The squad</a></nav>
+    <a class="header-link" href="https://dinamo1948.ro/" target="_blank" rel="noopener noreferrer">Official club <span>↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="red-dot"></span> SUPERLIGA ROMÂNIEI <span class="season-tag">2026 / 27</span></p>
+        <h1 id="hero-title">ONE CLUB.<br>ONE HEART.<br><span>DINAMO.</span></h1>
+        <p class="hero-description">Bucharest in our blood. Red and white in our hearts.<br>Follow every moment of the season, together.</p>
+        <a class="button" href="#matches">Explore the season <span>↗</span></a>
+        <div class="hero-bottom"><span>1948 — FOREVER</span><a href="#season" aria-label="Scroll to season overview">SCROLL TO DISCOVER <span>↓</span></a></div>
+      </div>
+      <div class="hero-photo"><img src="assets/fans.jpg" alt="Dinamo supporters waving red and white flags in the stadium" fetchpriority="high"><span class="photo-label">THE COLOURS. THE PEOPLE. THE PASSION.</span><div class="photo-word" aria-hidden="true">DOAR<br>DINAMO</div><div class="latest-result"><div><span class="eyebrow">LATEST RESULT · 09 OCT</span><span class="result-win">WIN</span></div><p>SEPSI OSK <strong>0 <span>–</span> 2</strong> DINAMO</p><small>SuperLiga · Matchweek 11</small></div></div>
+    </section>
+    <div class="ribbon" aria-hidden="true"><span>BUCUREȘTI E AL NOSTRU</span><span>✦</span><span>RED & WHITE. ALWAYS.</span><span>✦</span><span>DINAMO DIN '48</span><span>✦</span><span>BUCUREȘTI E AL NOSTRU</span></div>
+    <section id="season" class="stats wrap" aria-label="Season statistics after 11 matches"><div><span class="stat-label">LEAGUE POSITION</span><strong>01<span> / 16</span></strong><small>Leading the way</small></div><div><span class="stat-label">POINTS EARNED</span><strong>26</strong><small>11 matches played</small></div><div><span class="stat-label">SEASON WINS</span><strong>08</strong><small>8 wins · 2 draws · 1 loss</small></div><div><span class="stat-label">GOALS SCORED</span><strong>25</strong><small>+18 goal difference</small></div></section>
+    <section id="matches" class="matches section wrap">
+      <div class="section-head"><div><p class="eyebrow red">EVERY MATCH. EVERY MOMENT.</p><h2>THE SEASON, IN PLAY.</h2></div><a class="text-link" href="https://lpf.ro/cluburi/dinamo-bucuresti/14/calendar" target="_blank" rel="noopener noreferrer">Official schedule <span>↗</span></a></div>
+      <div class="match-controls"><div class="tabs" role="group" aria-label="Match schedule"><button class="selected" data-tab="upcoming" aria-pressed="true">Upcoming matches</button><button data-tab="results" aria-pressed="false">Recent results</button></div><label class="venue-label">Venue <select id="venue"><option value="all">All matches</option><option value="home">Home</option><option value="away">Away</option></select></label></div>
+      <div id="match-list" class="match-grid" aria-live="polite"></div>
+      <noscript><p><a href="https://lpf.ro/cluburi/dinamo-bucuresti/14/calendar">View the official match calendar</a>. Enable JavaScript to filter matches here.</p></noscript>
+      <button id="more-matches" class="more-button">Show all upcoming matches <span>↓</span></button>
+      <p class="data-note">Season snapshot · 13 October 2026. Kickoff times are local to Bucharest. Fixtures may change.</p>
+    </section>
+    <section id="standings" class="standings-section"><div class="wrap standings-layout"><div class="standings-copy"><p class="eyebrow red">THE BIGGER PICTURE</p><h2>OUR PLACE.<br>OUR AMBITION.</h2><p>Eleven matches in. Every point matters.<br>Follow the race at the top of the SuperLiga.</p><div class="form-block"><span class="eyebrow">LAST FIVE · OLDEST TO NEWEST</span><div class="form"><span class="draw">D</span><span>W</span><span>W</span><span>W</span><span>W</span></div></div><a class="text-link" href="https://lpf.ro/liga-1" target="_blank" rel="noopener noreferrer">Visit the official league table ↗</a></div><div class="table-card"><div class="table-heading"><h3>SUPERLIGA</h3><span>2026 / 27 · MATCHWEEK 11</span></div><div class="table-scroll"><table><caption class="sr-only">SuperLiga standings as of 13 October 2026</caption><thead><tr><th scope="col">POS</th><th scope="col">CLUB</th><th scope="col">P</th><th scope="col">GD</th><th scope="col">PTS</th></tr></thead><tbody id="league-table"></tbody></table></div><button id="table-toggle" class="table-toggle" aria-expanded="false">View full standings <span>↓</span></button></div></div></section>
+    <section id="squad" class="section wrap"><div class="section-head"><div><p class="eyebrow red">THE PEOPLE BEHIND THE BADGE</p><h2>MEET THE RED & WHITE.</h2></div><a class="text-link" href="https://www.superliga.ro/cluburi/dinamo-bucuresti" target="_blank" rel="noopener noreferrer">Full squad <span>↗</span></a></div><div class="player-grid"><button class="player" data-player="cirjan" aria-label="View Cătălin Cîrjan's profile"><span class="player-number">10</span><span class="player-position">MIDFIELDER</span><img src="assets/cirjan.webp" alt="Cătălin Cîrjan" loading="lazy" width="464" height="696"><span class="player-info"><small>CĂTĂLIN</small><strong>CÎRJAN</strong><span class="player-arrow">↗</span></span></button><button class="player" data-player="armstrong" aria-label="View Danny Armstrong's profile"><span class="player-number">77</span><span class="player-position">MIDFIELDER</span><img src="assets/armstrong.webp" alt="Danny Armstrong" loading="lazy" width="464" height="696"><span class="player-info"><small>DANNY</small><strong>ARMSTRONG</strong><span class="player-arrow">↗</span></span></button><button class="player" data-player="karamoko" aria-label="View Mamoudou Karamoko's profile"><span class="player-number">09</span><span class="player-position">FORWARD</span><img src="assets/karamoko.webp" alt="Mamoudou Karamoko" loading="lazy" width="464" height="696"><span class="player-info"><small>MAMOUDOU</small><strong>KARAMOKO</strong><span class="player-arrow">↗</span></span></button></div></section>
+    <section class="supporters wrap"><div><p class="eyebrow">MORE THAN NINETY MINUTES.</p><h2>THIS IS OUR CITY.<br>THIS IS OUR CLUB.</h2><p>From the first whistle to the last song.<br>Be part of the red and white.</p><a class="button button-white" href="https://app-tickets.dinamo1948.ro/e/abonamente-dinamo-1948-superliga-2026-2027" target="_blank" rel="noopener noreferrer">Season tickets <span>↗</span></a></div><span class="supporters-mark" aria-hidden="true">D<br>1948</span></section>
+  </main>
+  <footer class="wrap"><div class="footer-top"><a class="brand" href="#"><img src="assets/crest.webp" alt="" width="36" height="42"><span>DINAMO <small>BUCUREȘTI · EST. 1948</small></span></a><p>One club. One heart. Since 1948.</p><a href="#main" class="text-link">Back to top ↑</a></div><div class="footer-bottom"><p>Independent fan showcase · 2026/27 season · Data updated 13 Oct 2026</p><div><a href="https://lpf.ro/liga-1" target="_blank" rel="noopener noreferrer">League data</a><a href="https://dinamo1948.ro/" target="_blank" rel="noopener noreferrer">Club & player photos</a><a href="https://www.sport.ro/fotbal-intern/dinamo-rapid-ploaie-de-amenzi-jandarmeria-bucuresti-a-prezentat-bilantul-unui-meci-cu-mare-probleme.html" target="_blank" rel="noopener noreferrer">Supporter photo</a></div></div></footer>
+  <dialog id="player-dialog"><button class="dialog-close" aria-label="Close player profile">×</button><p class="eyebrow red" id="dialog-position"></p><h2 id="dialog-name"></h2><p id="dialog-description"></p><a class="button" id="dialog-link" target="_blank" rel="noopener noreferrer">Official player profile ↗</a></dialog>
+</body>
+</html>
